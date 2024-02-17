@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+
+    <a-assets>      
+    <a-asset-item id = 'train' src = "./train.glb"></a-asset-item>
+    </a-assets>
+  
+ <a-entity gltf-model = "#train" position = "0 0 -10" rotation = "0 0 0" scale = "0.1 0.1 0.1"></a-entity>
+    
+    <a-circle id="floor" position="-0.4 -0.76 -10" rotation="-90 0 0" radius="15" shadow="receive: true" visible="true"
+      color="black">
+    </a-circle>
+    
+  </a-scene>
+</body>
+
+</html>
